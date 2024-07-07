@@ -19,11 +19,14 @@ namespace OOP1
             product1.CategoryId = 3;
             product1.ProductName = "Lamba";
             product1.UnitPrice = 35;
-            product1.UnitsInStock = 50;
+              product1.UnitsInStock = 50;
 
             ProductManager productManager = new ProductManager();
             productManager.Add(product1);
             productManager.Add(product2);
+
+            int toplamaSonucu = productManager.Topla(3, 6);
+            Console.WriteLine(toplamaSonucu * 2 ); // Gördüğün gibi return sayesinde çıkan sonucu farklı yerlerde kullanabiliyoruz
 
             Console.ReadLine();
         }

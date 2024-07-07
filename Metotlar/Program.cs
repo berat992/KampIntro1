@@ -20,7 +20,7 @@ namespace KampIntro1
             product2.UrunAdi = "Elma";
             product2.Aciklama = "Amasyadan elmalar";
             product2.Fiyati = 12;
-
+            
             Product[] products = new Product[] {product1,product2};
             foreach (Product product in products)
             {
